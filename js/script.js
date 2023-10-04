@@ -43,7 +43,7 @@ const sendEmail = (e) => {
     emailjs.sendForm('service_ug7w6m8','template_n2uhksv','#contact-form','AYaxeKCb87h8gIWtc')
     .then(() =>{
         // Show sent message
-        contactMessage.textContent = 'Message sent successfully ✅'
+        contactMessage.textContent = 'Message envoyé avec succès ✅'
 
         // Remove message after five seconds
         setTimeout(() =>{
@@ -55,7 +55,7 @@ const sendEmail = (e) => {
 
     }, () =>{
         // Show error message
-        contactMessage.textContent = 'Message not sent (service error) ❌'
+        contactMessage.textContent = 'Message non envoyé (service erreur) ❌'
     })
 }
 
